@@ -1,0 +1,102 @@
+body{
+	font-family:baskerville, serif;
+	text-align: center;
+	background-color: #f8dda4;
+}
+
+h1{
+		font-family:sacramento, cursive;
+		margin-top: 20px;
+		color: black;
+}
+
+
+a{
+	color: black;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.Task_bar input[type="text"]{
+	padding: 10px;
+	width: 700px;
+	margin-left: 30px;
+	border-radius: 20px;
+}
+.Search_bar input[type="text"]{
+	padding: 10px;
+	width: 150px;
+	margin-left: 220px ;
+	border-radius: 20px;
+}
+
+.add{
+	padding: 10px 20px;
+	cursor: pointer;
+	background-color: #f9a03f;
+	border-radius: 20px;
+	color: white;
+}
+
+.search{
+	padding: 10px 10px;
+	cursor: pointer;
+	background-color: #f9a03f;
+	border-radius: 20px;
+	color: white;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightyellow;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.task-text {
+    flex: 1;
+}
+
+.task-actions {
+    display: flex;
+    align-items: center;
+}
+
+.delete-button {
+    background-color: #f9a03f;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: white;
+    margin-left: 10px;
+}
+
+.add:hover, .search:hover{
+    background-color: #d45113;
+    transform: scale(1.1);
+}
+
+.delete-button:hover {
+    background-color: #d45113;
+    animation: bounce 0.3s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(3px);
+    }
+    to {
+        transform: translateY(-3px);
+    }
+}

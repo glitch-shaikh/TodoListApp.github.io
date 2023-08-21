@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect
 from database import Database
 
 app = Flask(__name__)
+app.static_folder = 'static'
 db = Database()
 
 @app.route('/')
